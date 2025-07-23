@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.6;
+    color: #222;
+  }
+  
+  /* BANNERS */
+  .banner {
+    width: 100%;
+  }
+  
+  .responsive-banner {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* SECCIÓN POR QUÉ HACER ESTE NEGOCIO */
+  .por-que {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #010a3d;
+  }
+  
+  .por-que h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff6f6;
+  }
+  
+  .razones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .razon {
+    flex: 1 1 250px;
+    max-width: 300px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease,
+    box-shadow 0,3s ease;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+  
+  .razon img {
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .razon p {
+    font-size: 1rem;
+    color: #444;
+  }
+
+  .razon:hover {
+    transform: scale(1.03);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* CTA - LLAMADO A LA ACCIÓN */
+  .cta {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0ffe0;
+  }
+  
+  .cta h3 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .boton-whatsapp {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #25D366;
+    color: white;
+    font-size: 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+  
+  .boton-whatsapp:hover {
+    background-color: #1ebe57;
+  }
+  
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .razones {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .razon {
+      width:90%;
+      max-width: 400px;
+    }
+  }
+  
+  /*aca va la animacion del texto */
+  .mensaje-animado {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease, transform 1s ease;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 2rem 1rem;
+    color: #fcfcff;
+    font-family: Geneva, Tahoma, sans-serif;
+    background-color: #ff6600b9;
+  }
+  
+  .mensaje-animado.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  /* Responsive ajuste para móviles */
+  @media (max-width: 600px) {
+    .mensaje-animado {
+      font-size: 1.4rem;
+      padding: 1.5rem 1rem;
+    }
+  }
+  
+  .divider {
+    width: 100px;
+    margin: 20px auto;
+    border: 0;
+    border-top: 2px solid #dadcff;
+    border-radius: 2px;
+    margin-bottom: -23px;
+
+  }
+
+  /*Footer*/
+
+  .footer {
+    background-color: #1f1f1f; /* Fondo oscuro elegante */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .footer h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  .footer .redes {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .footer .redes a {
+    display: inline-block;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer .redes a:hover {
+    transform: scale(1.2);
+  }
+  
+  .footer p {
+    font-size: 0.9rem;
+    opacity: 0.7;
+    margin-top: 15px;
+  }
+  
