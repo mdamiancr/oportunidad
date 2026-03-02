@@ -195,7 +195,7 @@
 .contenedor-boton {
   text-align: center;
   margin-top: 35px;
-  margin-bottom: 35px;
+  
 }
 
 .btn-comprar {
@@ -209,6 +209,7 @@
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
+  margin-bottom: 35px;
 }
 
 .btn-comprar:hover {
