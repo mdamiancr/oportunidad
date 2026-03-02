@@ -193,12 +193,13 @@
   }
 
 .btn-comprar {
-  display: inline-block;   /* no block */
-  width: auto;             /* clave */
-  margin: 30px auto 0 auto;
+  display: block;
+  width: fit-content;
+  margin: 30px auto 0 auto; /* esto lo centra */
   padding: 8px 18px;
   font-size: 15px;
   font-weight: 600;
+  text-align: center;       /* centra el texto */
   color: white;
   background-color: #1b5e20;
   border: 2px solid #2e7d32;
