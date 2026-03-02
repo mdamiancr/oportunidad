@@ -193,19 +193,17 @@
   }
 
 .btn-comprar {
-  margin-bottom: 25px;
-  margin-top: 25px;
-  display: inline-block;
-  padding: 6px 14px;
-  font-size: 18px;
+  display: inline-block;   /* no block */
+  width: auto;             /* clave */
+  margin: 30px auto 0 auto;
+  padding: 8px 18px;
+  font-size: 15px;
   font-weight: 600;
+  color: white;
+  background-color: #1b5e20;
+  border: 2px solid #2e7d32;
+  border-radius: 8px;
   text-decoration: none;
-  color: #ffffff;
-  background-color: #1b5e20; /* verde base */
-  border: 2px solid #2e7d32; /* borde verde más claro */
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  text-align: center;
 }
 
 .btn-comprar:hover {
